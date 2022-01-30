@@ -8,6 +8,7 @@ import NotiList from "../components/NotiList";
 import Category from "../components/Category";
 import Reportaje from "../components/Reportaje";
 import Titular from "../components/Titular";
+import ranaShare from "../images/rana-share.jpg";
 import './styles/Home.css'
 
 const Home = (props) => {
@@ -64,6 +65,7 @@ const Home = (props) => {
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content="RanaTV"/>
         <meta property="og:description"        content="Noticias"/>
+        <meta property="og:image"              content={ranaShare} />
       </Helmet>
       <div className="conatiner">
         <Banner banner={banner} />
