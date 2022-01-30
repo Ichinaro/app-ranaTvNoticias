@@ -12,7 +12,7 @@ const BadgeInfo = (props) => {
   return (
     <React.Fragment>
       <Helmet>
-        <meta property="og:url"                content={`https://ranatv.herokuapp.com/noticia/noticia/${id}`} />
+        <meta property="og:url"                content={`https://ranatv.herokuapp.com/noticia/${id}`} />
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content={notas().titulo} />
         <meta property="og:description"        content={notas().subTitulo}/>
