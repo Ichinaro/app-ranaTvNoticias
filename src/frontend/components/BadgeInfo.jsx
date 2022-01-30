@@ -28,12 +28,6 @@ const BadgeInfo = (props) => {
           <img src={notas().url} alt="..." />
         </div>
         <pre className="pg-noticia-descripcion">{notas().descripcion}</pre>
-        <div className="facebook-share">
-          <div className="fb-share-button" 
-            data-href={`https://ranatv.herokuapp.com/noticia/${id}`} 
-            data-layout="button_count">
-          </div>
-        </div>
       </div>
     </React.Fragment>
   );
