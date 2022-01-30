@@ -28,6 +28,7 @@ const BadgeInfo = (props) => {
           <img src={notas().url} alt="..." />
         </div>
         <pre className="pg-noticia-descripcion">{notas().descripcion}</pre>
+        <iframe src={`https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Franatv.herokuapp.com%2Fnoticia%2F${id}&layout=button&size=large&width=103&height=28&appId`} width="103" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
     </React.Fragment>
   );
