@@ -18,8 +18,6 @@ const BadgeInfo = (props) => {
         <meta property="og:title"              content={notas().titulo} />
         <meta property="og:description"        content={notas().subTitulo}/>
         <meta property="og:image"              content={notas().url}  />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       </Helmet>
       <div className="pg-noticia">
         <h2 className="pg-noticia-tittle">{notas().titulo}</h2>
