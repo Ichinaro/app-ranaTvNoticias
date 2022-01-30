@@ -8,7 +8,6 @@ import NotiList from "../components/NotiList";
 import Category from "../components/Category";
 import Reportaje from "../components/Reportaje";
 import Titular from "../components/Titular";
-import ranaShare from "../images/rana-share.jpg";
 import './styles/Home.css'
 
 const Home = (props) => {
@@ -65,7 +64,7 @@ const Home = (props) => {
         <meta property="og:type"               content="article" />
         <meta property="og:title"              content="RanaTV"/>
         <meta property="og:description"        content="Noticias"/>
-        <meta property="og:image"              content={ranaShare} />
+        <meta property="og:image"              content="https://scontent.fmch2-1.fna.fbcdn.net/v/t39.30808-6/229798347_4853783284636688_5860767665755358455_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=diFpyMDm5ZQAX-BVCoS&_nc_ht=scontent.fmch2-1.fna&oh=00_AT-p26lPvLCHhCDN9G_dyqyP1u2yRCGPyNVEwKbIi8q3LA&oe=61FB2877" />
       </Helmet>
       <div className="conatiner">
         <Banner banner={banner} />
