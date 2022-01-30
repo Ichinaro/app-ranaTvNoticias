@@ -23,17 +23,12 @@ const ProductInfo = (props) => {
             >
               Regresar
             </button>
-            <div 
-              className="fb-share-button"
-              data-href={`https://ranatv.herokuapp.com/noticia/${id}`}
-              data-layout="button" data-size="large">
-                <a
-                  target="_blank"
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Franatv.herokuapp.com%2Fnoticia%2F${id}%2F&amp;src=sdkpreparse`}
-                  className="fb-xfbml-parse-ignore">
-                    Compartir
-                </a>
+            <div className="facebook-share">
+              <div className="fb-share-button" 
+              data-href={`https://ranatv.herokuapp.com/noticia/${id}`} 
+              data-layout="button_count">
               </div>
+            </div>
           </div>
         </div>
         <div className="pg-publicidad">

@@ -41,30 +41,17 @@ const Home = (props) => {
     return [valor[0], valor[1], valor[2], valor[3]];
   }
 
-  /*function generales() {
-    const local = noticias.filter((noticia) =>
-      noticia.categoria.includes("Local")
-    );
-    const nacional = noticias.filter((noticia) =>
-      noticia.categoria.includes("Nacional")
-    );
-    const internacional = noticias.filter((noticia) =>
-      noticia.categoria.includes("Internacional")
-    );
-    const deportes = noticias.filter((noticia) =>
-      noticia.categoria.includes("Deportes")
-    );
-    return [local[0], nacional[0], internacional[0], deportes[0]];
-  }*/
-
   return (
     <React.Fragment>
       <Helmet>
-        <meta property="og:url"                content="https://ranatv.herokuapp.com" />
-        <meta property="og:type"               content="article" />
-        <meta property="og:title"              content="RanaTV"/>
-        <meta property="og:description"        content="Noticias"/>
-        <meta property="og:image"              content="https://scontent.fmch2-1.fna.fbcdn.net/v/t39.30808-6/229798347_4853783284636688_5860767665755358455_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=diFpyMDm5ZQAX-BVCoS&_nc_ht=scontent.fmch2-1.fna&oh=00_AT-p26lPvLCHhCDN9G_dyqyP1u2yRCGPyNVEwKbIi8q3LA&oe=61FB2877" />
+        <title>RanaTv</title>
+        <meta property="og:url" content="https://ranatv.herokuapp.com" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="RanaTV"/>
+        <meta property="og:description" content="Noticias"/>
+        <meta property="og:image" content="https://scontent.fmch2-1.fna.fbcdn.net/v/t39.30808-6/229798347_4853783284636688_5860767665755358455_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=e3f864&_nc_ohc=diFpyMDm5ZQAX-BVCoS&_nc_ht=scontent.fmch2-1.fna&oh=00_AT-p26lPvLCHhCDN9G_dyqyP1u2yRCGPyNVEwKbIi8q3LA&oe=61FB2877" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
       </Helmet>
       <div className="conatiner">
         <Banner banner={banner} />
