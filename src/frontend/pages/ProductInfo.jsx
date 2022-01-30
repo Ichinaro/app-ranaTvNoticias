@@ -23,12 +23,6 @@ const ProductInfo = (props) => {
             >
               Regresar
             </button>
-            <div className="facebook-share">
-              <div className="fb-share-button" 
-              data-href={`https://ranatv.herokuapp.com/noticia/${id}`} 
-              data-layout="button_count">
-              </div>
-            </div>
           </div>
         </div>
         <div className="pg-publicidad">
