@@ -30,7 +30,7 @@
 .player-home {
   position: relative;
   margin: auto 0;
-  min-height: 160px;
+  min-height: 400px;
   height: 100%;
 }
 @media all and (max-width: 1000px) {
@@ -49,4 +49,7 @@
   .publicidad-items {
     grid-auto-rows: 100px;
   }
+  .player-home{
+    min-height: 160px;
+   }
 }
