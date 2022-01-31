@@ -30,7 +30,7 @@
 .player-home {
   position: relative;
   margin: auto 0;
-  min-height: 300px;
+  min-height: 160px;
   height: 100%;
 }
 @media all and (max-width: 1000px) {
