@@ -30,6 +30,8 @@
 .player-home {
   position: relative;
   margin: auto 0;
+  min-height: 300px;
+  height: 100%;
 }
 @media all and (max-width: 1000px) {
   .header {
