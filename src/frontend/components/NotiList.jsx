@@ -4,12 +4,11 @@ import "./styles/Notilist.css";
 import NotiListItem from "./NotiListItem";
 
 function NotiList(props) {
-  const { user } = props;
-  const hasUser = Object.keys(user).includes("email"); //id
-  const noticias = props.noticias;
-  const news = noticias.filter((noticia) => {
-    return noticia.categoria.includes(props.category);
-  });
+  const { user, noticias, category } = props;
+  const hasUser = Object.keys(user).includes("email");
+  const news = noticias.filter((noticia) =>
+    noticia.categoria.includes(category)
+  );
 
   if (news.length > 0) {
     return (
