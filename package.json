@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "app informativa",
   "main": "src/server/index.js",
+  "engines": {
+    "node": "14.2.0"
+  }
   "scripts": {
     "build": "webpack-cli --config webpack.config.js",
     "start:dev": "nodemon src/server/index",
