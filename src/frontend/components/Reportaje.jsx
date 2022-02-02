@@ -2,17 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/Reportaje.css";
 
-class ReportajeItem extends React.Component {
-  render() {
-    return (
-      <>
-        <img src={this.props.noticia.url} alt="" />
-        <div className="general-item">
-          <p>{this.props.noticia.titulo}</p>
-        </div>
-      </>
-    );
-  }
+const ReportajeItem = (props)=>{
+  return (
+    <>
+      <img src={props.noticia.url} alt="" />
+      <div className="general-item">
+        <p>{props.noticia.titulo}</p>
+      </div>
+    </>
+  );
 }
 
 function Reportaje(props) {
