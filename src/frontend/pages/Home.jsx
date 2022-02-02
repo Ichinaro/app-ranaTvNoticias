@@ -13,7 +13,7 @@ import './styles/Home.css'
 function Home (props){
   const { stream, noticias } = props;
   
-  cont news =(category)=>{
+  const news =(category)=>{
     const items = noticias.filter((noticia)=>
       noticia.categoria.includes(category));
     return[items[0], items[1], items[2], items[3]];
