@@ -10,35 +10,13 @@ import Reportaje from "../components/Reportaje";
 import Titular from "../components/Titular";
 import './styles/Home.css'
 
-const Home = (props) => {
+function Home (props){
   const { stream, noticias } = props;
   
-  function locales() {
-    const locales = noticias.filter((noticia) =>
-      noticia.categoria.includes("Local")
-    );
-    return [locales[0], locales[1], locales[2], locales[3]];
-  }
-
-  function nacional() {
-    const locales = noticias.filter((noticia) =>
-      noticia.categoria.includes("Nacional")
-    );
-    return [locales[0], locales[1], locales[2], locales[3]];
-  }
-
-  function internacional() {
-    const locales = noticias.filter((noticia) =>
-      noticia.categoria.includes("Internacional")
-    );
-    return [locales[0], locales[1], locales[2], locales[3]];
-  }
-
-  function deportes() {
-    const valor = noticias.filter((noticia) =>
-      noticia.categoria.includes("Deportes")
-    );
-    return [valor[0], valor[1], valor[2], valor[3]];
+  cont news =(category)=>{
+    const items = noticias.filter((noticia)=>
+      noticia.categoria.includes(category));
+    return[items[0], items[1], items[2], items[3]];
   }
 
   return (
@@ -64,22 +42,22 @@ const Home = (props) => {
       <div className="constainer margen">
         <Category title="Noticias Locales" param="Local">
           <ul className="noticias-container">
-            <NotiList noticias={locales()} category="Local" />
+            <NotiList noticias={news("Local")} category="Local" />
           </ul>
         </Category>
         <Category title="Noticias Nacionales" param="Nacional" >
           <ul className="noticias-container">
-            <NotiList noticias={nacional()} category="Nacional" />
+            <NotiList noticias={news("Nacional")} category="Nacional" />
           </ul>
         </Category>
         <Category title="Noticias Internacionales" param="Internacional" >
           <ul className="noticias-container">
-            <NotiList noticias={internacional()} category="Internacional" />
+            <NotiList noticias={news("Internacional")} category="Internacional" />
           </ul>
         </Category>
         <Category title="Deportes" param="Deportes" >
           <ul className="noticias-container">
-            <NotiList noticias={deportes()} category="Deportes" />
+            <NotiList noticias={news("Deportes")} category="Deportes" />
           </ul>
         </Category>
       </div>
