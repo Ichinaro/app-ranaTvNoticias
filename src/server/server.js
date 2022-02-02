@@ -60,7 +60,7 @@ const setResponse = (html, preloadedState, manifest) => {
   return `
     <!DOCTYPE html>
     <html lang="en">
-      <head">
+      <head>
         ${metaHelmet.title.toString()}
         ${metaHelmet.meta.toString()}
         <meta charset="utf-8" />
