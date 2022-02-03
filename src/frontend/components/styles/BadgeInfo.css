@@ -19,8 +19,9 @@
 }
 .pg-noticia-descripcion {
   white-space: pre-wrap;
-  font-family: math;
+  font-family: sans-serif;
   text-align: justify;
   font-size: 20px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
